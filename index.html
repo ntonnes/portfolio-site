@@ -45,14 +45,51 @@
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
-            <!-- Your project cards or details go here -->
+    
+            <div class="project-card" onclick="showProjectDetails(1)">
+                <h3>Project 1: Awesome Project</h3>
+                <p>This is a description of the awesome project. It includes details about the technologies used, challenges faced, and the outcome.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+    
+            <div class="project-card" onclick="showProjectDetails(2)">
+                <h3>Project 2: Amazing Website</h3>
+                <p>Another great project showcasing your skills and creativity. Provide insights into your role and contributions.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+    
+            <!-- Add more project cards as needed -->
+    
+            <!-- Project Details Modal -->
+            <div class="modal" id="project-details-modal">
+                <div class="modal-content">
+                    <span class="close" onclick="hideProjectDetails()">&times;</span>
+                    <h2 id="project-title"></h2>
+                    <p id="project-description"></p>
+                    <a href="#" id="project-modal-link" class="project-link">View Project</a>
+                </div>
+            </div>
+    
         </div>
     </section>
 
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
-            <!-- Your contact form or details go here -->
+    
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+    
         </div>
     </section>
 
