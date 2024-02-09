@@ -1,5 +1,3 @@
-// You can add JavaScript for interactivity here, such as smooth scrolling, form validation, etc.
-// Example:
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -35,26 +33,36 @@ function hideProjectDetails() {
     document.getElementById('project-details-modal').style.display = 'none';
 }
 
-// Form Submission
+
 function submitForm(event) {
     event.preventDefault();
-
-    // Perform form validation and submission logic here
-    // Example: You can use the Fetch API to send form data to a server
     const formData = new FormData(event.target);
-    // Fetch API example:
-    // fetch('/submit-form', {
-    //     method: 'POST',
-    //     body: formData
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     console.log('Form submission successful:', data);
-    // })
-    // .catch(error => {
-    //     console.error('Error submitting form:', error);
-    // });
-
-    // Reset the form after submission
     event.target.reset();
 }
+
+let darkMode = localStorage.getItem('darkMode'); 
+
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
+
+const enableDarkMode = () => {
+  document.body.classList.add('darkmode');
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+  document.body.classList.remove('darkmode');
+  localStorage.setItem('darkMode', 'disabled');
+}
+
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener('click', () => {
+  darkMode = localStorage.getItem('darkMode'); 
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  } else {  
+    disableDarkMode(); 
+  }
+});
