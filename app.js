@@ -1,15 +1,18 @@
+// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
+        // Scroll smoothly to the section the anchor link points to
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
     });
 });
 
-// Project Details Modal
+// Function to show project details in a modal
 function showProjectDetails(projectNumber) {
+    // Get modal and its elements
     const modal = document.getElementById('project-details-modal');
     const titleElement = document.getElementById('project-title');
     const descriptionElement = document.getElementById('project-description');
@@ -26,43 +29,12 @@ function showProjectDetails(projectNumber) {
         linkElement.href = '#';  // Update with the actual project link
     }
 
+    // Show the modal
     modal.style.display = 'block';
 }
 
+// Function to hide project details modal
 function hideProjectDetails() {
-    document.getElementById('project-details-modal').style.display = 'none';
+  document.getElementById('project-details-modal').style.display = 'none';
 }
 
-
-function submitForm(event) {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    event.target.reset();
-}
-
-let darkMode = localStorage.getItem('darkMode'); 
-
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-
-const enableDarkMode = () => {
-  document.body.classList.add('darkmode');
-  localStorage.setItem('darkMode', 'enabled');
-}
-
-const disableDarkMode = () => {
-  document.body.classList.remove('darkmode');
-  localStorage.setItem('darkMode', 'disabled');
-}
-
-if (darkMode === 'enabled') {
-  enableDarkMode();
-}
-
-darkModeToggle.addEventListener('click', () => {
-  darkMode = localStorage.getItem('darkMode'); 
-  if (darkMode !== 'enabled') {
-    enableDarkMode();
-  } else {  
-    disableDarkMode(); 
-  }
-});

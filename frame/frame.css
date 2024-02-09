@@ -1,0 +1,80 @@
+/** DARK MODE COLOR SCHEME **/
+body.darkmode {
+    color: #fff;                          /* White text */
+    background-color: #000;               /* Dark background */
+}
+body.darkmode header, body.darkmode nav, body.darkmode nav #dark-mode-toggle, body.darkmode footer {
+    background-color: #555;               /* Darker background */
+}
+body.darkmode nav a:hover, body.darkmode nav #dark-mode-toggle:hover{
+    background-color: #777;               /* Lighter background on hover */
+}
+
+
+/** CENTER CONTENT **/
+.container {
+    margin: 0 auto;                         /* Center the container */
+    padding: 20px;                          /* Add padding to the container */
+    max-width: 1200px;                      /* Set the max width of the container */
+}
+
+
+/** INITIALIZE <HEADER>, <NAV>, <FOOTER> WITH DEFAULTS **/ 
+header, nav, footer {
+    color: #fff;                          /* White text */
+    background-color: #003366;            /* Dark blue background */
+}
+header h1 {
+    margin: 0;                              /* Remove default margin */
+}
+nav ul {
+    padding: 0;                             /* Remove default padding */         
+    display: flex;                          /* Align navigation links horizontally */
+    list-style: none;                       /* remove bullet list */
+}
+nav a {
+    padding: 10px;                          /* Add padding to navigation links */
+    color: #fff;                          /* White text */
+    text-decoration: none;                  /* Remove underline from links */
+    transition: background-color 0.3s ease; /* Add transition to links */
+}
+
+nav a:hover {
+    background-color: #6699cc;            /* Light blue background on hover */
+}
+
+
+/** FORMAT THE FOOTER **/
+footer {
+    padding: 10px 0;                        /* Add padding to the footer */ 
+    text-align: center;                     /* Center the text in the footer */
+}
+
+
+/** INITIALIZE THE CONTACT FORM & STYLIZE **/
+form {
+    display: grid;
+    gap: 15px;                              /* Add space between form elements */
+    width: 50%;                             /* Set the width of the form */
+    margin: 0 auto;                         /* Center the form */
+}
+label {
+    font-weight: bold;                      /* Bold the form labels */
+}
+input, textarea {
+    padding: 10px;                          /* Add padding to form elements */
+    width: 100%;                            /* Set the width of the form elements */    
+    box-sizing: border-box;                 /* Include padding and border in the width */
+    resize: vertical;                       /* Allow only vertical resizing */
+}
+button {
+    padding: 10px 20px;                     /* Add padding to the button */
+    color: #fff;                          /* White text */  
+    background-color: #6699cc;            /* Light blue background */
+    border: none;                           /* Remove the border */
+    cursor: pointer;                        /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Add transition to button */
+}
+button:hover {
+    background-color: #777;               /* Lighter background on hover */
+}

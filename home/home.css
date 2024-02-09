@@ -1,0 +1,58 @@
+/* Set background and text color for header, nav, section, and footer */
+section {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Add padding and center text for sections */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+/* Add margin to section titles */
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Add border, padding, and hover effect to project cards */
+.project-card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Enlarge project cards on hover */
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Hide modal by default and set its position and size */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Set background, padding, and size for modal content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10% auto;
+    width: 70%;
+}
+
+/* Style the close button for the modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}

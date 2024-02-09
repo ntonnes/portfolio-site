@@ -2,14 +2,18 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../frame/frame.css">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
 </head>
 
 <body>
 
+    <!-- Header section -->
     <header>
         <div class="container">
             <h1>Noah Tonnesen</h1>
@@ -17,19 +21,20 @@
         </div>
     </header>
 
+    <!-- Navigation bar -->
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <!-- Dark mode toggle button -->
-            <button id="dark-mode-toggle">Toggle Dark Mode</button>
-        </div>
-    </nav>
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li> <!-- Link to the top of the current page -->
+            <li><a href="about.html">About</a></li> <!-- Link to about.html -->
+            <li><a href="projects.html">Projects</a></li> <!-- Link to projects.html -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link to contact.html -->
+        </ul>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+</nav>
 
+    <!-- Home section -->
     <section id="home" class="section">
         <div class="container">
             <h2>Welcome to my Portfolio</h2>
@@ -37,30 +42,24 @@
         </div>
     </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a student of both computer science and the life sciences at McGill University</p>
-        </div>
-    </section>
-
+    <!-- Projects section -->
     <section id="projects" class="section">
         <div class="container">
             <h2>Projects</h2>
     
+            <!-- Project 1 card -->
             <div class="project-card" onclick="showProjectDetails(1)">
                 <h3>Project 1: Awesome Project</h3>
                 <p>This is a description of the awesome project. It includes details about the technologies used, challenges faced, and the outcome.</p>
                 <a href="#" class="project-link">View Project</a>
             </div>
     
+            <!-- Project 2 card -->
             <div class="project-card" onclick="showProjectDetails(2)">
                 <h3>Project 2: Amazing Website</h3>
                 <p>Another great project showcasing your skills and creativity. Provide insights into your role and contributions.</p>
                 <a href="#" class="project-link">View Project</a>
             </div>
-    
-            <!-- Add more project cards as needed -->
     
             <!-- Project Details Modal -->
             <div class="modal" id="project-details-modal">
@@ -75,10 +74,12 @@
         </div>
     </section>
 
+    <!-- Contact section -->
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
     
+            <!-- Contact form -->
             <form id="contact-form" onsubmit="submitForm(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -95,13 +96,15 @@
         </div>
     </section>
 
+    <!-- Footer section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Noah Tonnesen. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- Link to the JavaScript file -->
+    <script src="../app.js"></script>
 </body>
 
 </html>

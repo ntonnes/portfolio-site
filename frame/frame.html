@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="frame.css">
+    <title>Header and Footer</title>
+</head>
+
+
+    <!-- Header section -->
+<header>
+    <div class="container">
+        <h1>Noah Tonnesen</h1>
+    </div>
+</header>
+
+
+<!-- Navigation bar -->
+<nav>
+<div class="container">
+    <ul>
+        <li><a href="#">Home</a></li> <!-- Link to the top of the current page -->
+        <li><a href="../about/about.html">About</a></li> <!-- Link to about.html -->
+        <li><a href="../projects/projects.html">Projects</a></li> <!-- Link to projects.html -->
+        <li><a href="../contact/contact.html">Contact</a></li> <!-- Link to contact.html -->
+    </ul>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+</div>
+</nav>
+
+
+<!-- Footer section -->
+<footer>
+
+    <!-- Contact section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+    
+            <!-- Contact form -->
+            <form id="contact-form" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+    
+        </div>
+    </section>
+    
+    <div class="container">
+        <p>&copy; 2024 Noah Tonnesen. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<!-- Link to the JavaScript file -->
+<script src="frame.js"></script>
+
+</html>
