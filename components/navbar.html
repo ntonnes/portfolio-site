@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Navigation bar -->
+<nav id="navbar">
+    <div class="container">
+        <ul>
+            <li><a href="#">Home</a></li> <!-- Link to the top of the current page -->
+            <li><a href="about.html">About</a></li> <!-- Link to about.html -->
+            <li><a href="projects.html">Projects</a></li> <!-- Link to projects.html -->
+            <li><a href="contact.html">Contact</a></li> <!-- Link to contact.html -->
+        </ul>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+</nav>
+
+<!-- Contact section -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Contact Me</h2>
+
+        <!-- Contact form -->
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+</section>
+    
+<footer id="footer">
+    <div class="container">
+        <p>&copy; 2024 Noah Tonnesen. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

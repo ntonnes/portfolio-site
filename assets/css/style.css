@@ -3,13 +3,18 @@ body.darkmode {
     color: #fff;                          /* White text */
     background-color: #000;               /* Dark background */
 }
-body.darkmode header, body.darkmode nav, body.darkmode nav #dark-mode-toggle, body.darkmode footer {
+
+body.darkmode header, 
+body.darkmode nav, 
+body.darkmode nav #dark-mode-toggle, 
+body.darkmode footer {
     background-color: #555;               /* Darker background */
 }
-body.darkmode nav a:hover, body.darkmode nav #dark-mode-toggle:hover{
+
+body.darkmode nav a:hover, 
+body.darkmode nav #dark-mode-toggle:hover {
     background-color: #777;               /* Lighter background on hover */
 }
-
 
 /** CENTER CONTENT **/
 .container {
@@ -18,20 +23,32 @@ body.darkmode nav a:hover, body.darkmode nav #dark-mode-toggle:hover{
     max-width: 1200px;                      /* Set the max width of the container */
 }
 
+body {
+    font-family: Arial, sans-serif; /* Set the font family */
+    line-height: 1.6; /* Set the line height */
+    color: #333; /* Set the text color */
+    background-color: #f4f4f4; /* Set the background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
 
 /** INITIALIZE <HEADER>, <NAV>, <FOOTER> WITH DEFAULTS **/ 
 header, nav, footer {
     color: #fff;                          /* White text */
     background-color: #003366;            /* Dark blue background */
 }
-header h1 {
-    margin: 0;                              /* Remove default margin */
-}
+
+header h1,
 nav ul {
+    margin: 0;                              /* Remove default margin */
     padding: 0;                             /* Remove default padding */         
+}
+
+nav ul {
     display: flex;                          /* Align navigation links horizontally */
     list-style: none;                       /* remove bullet list */
 }
+
 nav a {
     padding: 10px;                          /* Add padding to navigation links */
     color: #fff;                          /* White text */
@@ -43,13 +60,25 @@ nav a:hover {
     background-color: #6699cc;            /* Light blue background on hover */
 }
 
+section {
+    background-color: #585858;
+    color: #fff;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
 
 /** FORMAT THE FOOTER **/
 footer {
     padding: 10px 0;                        /* Add padding to the footer */ 
     text-align: center;                     /* Center the text in the footer */
 }
-
 
 /** INITIALIZE THE CONTACT FORM & STYLIZE **/
 form {
@@ -58,15 +87,18 @@ form {
     width: 50%;                             /* Set the width of the form */
     margin: 0 auto;                         /* Center the form */
 }
+
 label {
     font-weight: bold;                      /* Bold the form labels */
 }
+
 input, textarea {
     padding: 10px;                          /* Add padding to form elements */
     width: 100%;                            /* Set the width of the form elements */    
     box-sizing: border-box;                 /* Include padding and border in the width */
     resize: vertical;                       /* Allow only vertical resizing */
 }
+
 button {
     padding: 10px 20px;                     /* Add padding to the button */
     color: #fff;                          /* White text */  
@@ -75,6 +107,7 @@ button {
     cursor: pointer;                        /* Add pointer cursor */
     transition: background-color 0.3s ease; /* Add transition to button */
 }
+
 button:hover {
     background-color: #777;               /* Lighter background on hover */
 }

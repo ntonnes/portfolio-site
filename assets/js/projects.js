@@ -1,15 +1,3 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        // Scroll smoothly to the section the anchor link points to
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
 // Function to show project details in a modal
 function showProjectDetails(projectNumber) {
     // Get modal and its elements
@@ -37,4 +25,3 @@ function showProjectDetails(projectNumber) {
 function hideProjectDetails() {
   document.getElementById('project-details-modal').style.display = 'none';
 }
-

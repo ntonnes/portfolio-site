@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- Link to jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Header and Footer</title>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <div class="container">
+            <h1>Noah Tonnesen</h1>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <!-- References a <nav> element -->
+    <div id="navbar"></div>
+
+    <!-- Home section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h2>Welcome to my Portfolio</h2>
+            <p>here's some stuff i've done</p>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <!-- References a <section> element -->
+    <div id="contact"></div>
+
+    <!-- Footer section -->
+    <!-- References a <footer> element -->
+    <div id="footer"></div>
+
+    <script>
+        $("#navbar").load("../components/navbar.html #navbar, #footer, #contact", function() {
+            $.getScript("../assets/js/app.js");
+        });
+    </script>
+</body>
+
+</html>
