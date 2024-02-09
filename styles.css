@@ -114,3 +114,16 @@ button {
 button:hover {
     background-color: #555;
 }
+
+body.darkmode {
+  background-color: #000;
+  color: #fff;
+}
+
+body.darkmode header, body.darkmode nav, body.darkmode section, body.darkmode footer {
+  background-color: #555;
+}
+
+body.darkmode nav a:hover, body.darkmode button:hover {
+  background-color: #777;
+}
